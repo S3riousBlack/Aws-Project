@@ -1,0 +1,28 @@
+Project name -Set Up and Monitor a WordPress Instance for Your Organization
+
+Requirements
+Set up a live WordPress instance to publish blogs
+
+• Set up a WordPress instance that can be used for development and testing purposes so that any work done on this instance will not impact the live blog
+
+• Configure the WordPress instance for development and testing purposes, which will be available only for business hours (9 AM–6 PM)
+
+• Monitor the health of the WordPress instance 
+
+ 
+ Tool used:
+ -Amazon  cloudformation to create wordpress ec2 instance
+ -Ec2 snapshot to create snap of created instance 
+ -Ami to create AMI of wordpress instance 
+ -Scaling group to create wordpress instance for dev purpose
+
+-Cloud watch alarm to stop Ec2 instance between 6Pm to 9AM 
+-Route R53 to monitor the instance 
+
+Steps take 
+-Created a wordpress EC2 instance via cloud formation
+-Accessesed Wordpress after creating the instance to test
+-Created another EC2 using AMI of wordpress Instance(used auto scaling )
+-Created cloud watch alarm to stop EC2 instance 
+-Created Route53 to monitor the cloud watch alarm created for developement EC2 instance 
+ 

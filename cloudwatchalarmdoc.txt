@@ -1,0 +1,43 @@
+Summary
+Alarm "awsprojectwordpressalarm" created
+Data
+{
+  "alarmName": "awsprojectwordpressalarm",
+  "alarmType": "MetricAlarm",
+  "timestamp": "2023-12-09T11:01:15.920Z",
+  "historyItemType": "ConfigurationUpdate",
+  "historySummary": "Alarm \"awsprojectwordpressalarm\" created",
+  "historyData": {
+    "version": "1.0",
+    "type": "Create",
+    "createdAlarm": {
+      "alarmName": "awsprojectwordpressalarm",
+      "alarmDescription": "",
+      "alarmArn": "arn:aws:cloudwatch:us-east-1:250698069812:alarm:awsprojectwordpressalarm",
+      "alarmConfigurationUpdatedTimestamp": "2023-12-09T11:01:15.919+0000",
+      "namespace": "AWS/EC2",
+      "metricName": "CPUUtilization",
+      "statistic": "Average",
+      "period": 300,
+      "dimensions": [
+        {
+          "value": "i-02c5ac6e5b43136bd",
+          "name": "InstanceId"
+        }
+      ],
+      "threshold": 20,
+      "comparisonOperator": "GreaterThanThreshold",
+      "evaluationPeriods": 1,
+      "datapointsToAlarm": 1,
+      "treatMissingData": "missing",
+      "stateValue": "INSUFFICIENT_DATA",
+      "stateUpdatedTimestamp": "2023-12-09T11:01:15.919+0000",
+      "actionsEnabled": true,
+      "alarmActions": [
+        "arn:aws:swf:us-east-1:250698069812:action/actions/AWS_EC2.InstanceId.Stop/1.0"
+      ],
+      "insufficientDataActions": [],
+      "okactions": []
+    }
+  }
+}
